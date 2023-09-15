@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .mask-image-styles {
+    mask-image: url(../../public/mask.svg);
+    background: #ec4e39;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    color: black;
+  }
+
+  .clip-your-needful-style {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
